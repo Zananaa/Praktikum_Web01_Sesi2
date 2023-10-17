@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Documnt</title>
         <style>
+            h1 {
+                color: green;}
             .teks-merah{
                 font-size: 20px;
                 text-align: center;
@@ -18,7 +20,7 @@
                 text-align: center;
                 background-color: black;
                 color: yellow;
-
+            }
             .teks-merah{
                 color: red;
             }    
@@ -26,9 +28,12 @@
             #teks-kuning{
                 color: yellow;
             }
+            div p{
+                color: red;
+            }
 
-            h1 {
-                color: green;
+            div > div > p{
+                font-weight: bold;
             }
         </style>
     </head>
@@ -36,4 +41,11 @@
         <h1>Program web 1</h1>
         <p class="teks-merah">Praktek Pemrograman Web sesi 2 akan membahas tentang penggunaan CSS.</p>
         <p id="teks-kuning">CSS atau Cascading Style Sheets adalah sebuah bahasa yang digunakan untuk mengatur tampila suatu halam web.</p>
+        <div>
+            <p>Ini adalah paragraf pertama</p>
+            <div>
+                <p>Ini adalah paragraf kedua</p>
+            </div>
+        </div>
+    </body>
 </html>
